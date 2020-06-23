@@ -7,3 +7,10 @@ let logos = [
 logos.forEach((logo) => {
     $('#logos').append(`<img src="${logo}" class="logos"></img>`);
 });
+
+$('.logos').hover(
+    function() { $.data(this, 'hover', true); },
+    function() { $.data(this, 'hover', false); }
+    ).data('hover', false);
+
+if ($('.logos').data('hover')) {$('#fruits').text("hey")};
