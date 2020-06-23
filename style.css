@@ -6,6 +6,9 @@ main {
 }
 
 h1 {
+    color: rgb(139, 184, 225);
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 0px;
