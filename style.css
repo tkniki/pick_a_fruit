@@ -1,0 +1,35 @@
+main {
+    background-color: rgb(222, 250, 227);
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 30px;
+    margin-top: 0px;
+    
+}
+
+.logos {
+    height: 15%;
+    width: 15%;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0.2;
+}
+
+.logos:hover {
+    opacity: 1;
+    cursor: pointer;
+}
