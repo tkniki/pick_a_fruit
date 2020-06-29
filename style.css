@@ -15,7 +15,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-#logos {
+#logo {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -35,4 +35,29 @@ h1 {
 .logos:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+#fruits {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+    color: #4d6f8f;
+    position: relative;
+}
+
+#fruits p {
+    margin-bottom: 50px;
+}
+
+blockquote {
+    background: #b8d4bd;
+    border-radius: 10px;
+    color: #70634a;
+    width: auto;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
 }
