@@ -1,12 +1,12 @@
 console.log("hello");
 
-let logos = [
+/*let logos = [
     "fruit_icons/pear_v2.png", "fruit_icons/apple_v2.png", "fruit_icons/grape_v2.png", "fruit_icons/pineapple_v2.png"
 ];
 
 logos.forEach((logo) => {
     $('#logo').append(`<img src="${logo}" class="logos"></img>`);
-});
+}); */
 
 /*$('.logos').hover(
     function() { $.data(this, 'hover', true); },
@@ -42,3 +42,46 @@ let description = [
     },
 ]
 
+$('#pear')
+    .mouseenter(function() {
+        $(`#fruits`).append(`<h2>${description[0].title}</h2>`);
+        $(`#fruits`).append(`<p>${description[0].text}</p>`);
+        $(`#fruits`).append(`<blockquote>${description[0].quote}</blockquote>`);
+    })
+    .mouseleave(function() {
+        $(`#fruits`).empty()
+    });
+
+
+    //if ($('#pear').data(this, 'hover', true)) {$('#fruits').append(`hey`)};
+
+$('#apple')
+    .mouseenter(function() {
+        $(`#fruits`).append(`<h2>${description[1].title}</h2>`);
+        $(`#fruits`).append(`<p>${description[1].text}</p>`);
+        $(`#fruits`).append(`<blockquote>${description[1].quote}</blockquote>`);
+    })
+    .mouseleave(function() {
+        $(`#fruits`).empty()
+    });
+
+$('#grape')
+    .mouseenter(function() {
+        $(`#fruits`).append(`<h2>${description[2].title}</h2>`);
+        $(`#fruits`).append(`<p>${description[2].text}</p>`);
+        $(`#fruits`).append(`<blockquote>${description[2].quote}</blockquote>`);
+    })
+    .mouseleave(function() {
+        $(`#fruits`).empty()
+    });
+
+
+$('#pineapple')
+    .mouseenter(function() {
+        $(`#fruits`).append(`<h2>${description[3].title}</h2>`);
+        $(`#fruits`).append(`<p>${description[3].text}</p>`);
+        $(`#fruits`).append(`<blockquote>${description[3].quote}</blockquote>`);
+    })
+    .mouseleave(function() {
+        $(`#fruits`).empty()
+    });
