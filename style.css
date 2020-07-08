@@ -1,8 +1,12 @@
 main {
     background-color: rgb(222, 250, 227);
     width: 70%;
+    height: 100%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1 {
@@ -13,23 +17,29 @@ h1 {
     padding-top: 20px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    display: block;
+    margin: auto;
 }
 
 #logos {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 5px 30px;
+    margin: auto;
     margin-top: 0px;
     
 }
 
 img {
-    height: 15%;
-    width: 15%;
+    height: 250px;
+    width: 200px;
     margin: 0px;
     padding: 0px;
     opacity: 0.2;
+}
+
+#pineapple {
+    height: 280px;
 }
 
 img:hover {
@@ -40,7 +50,7 @@ img:hover {
 #fruits {
     width: 70%;
     margin: auto;
-    padding: 20px 0px;
+    padding: 10px 0px;
     color: #4d6f8f;
     position: relative;
 }
@@ -54,7 +64,7 @@ blockquote {
     border-radius: 10px;
     color: #70634a;
     width: auto;
-    margin: 10px;
+    margin-top: 10px;
     padding: 10px 15px;
     font-size: 20px;
     font-weight: bold;
@@ -63,5 +73,5 @@ blockquote {
 }
 
 h2 {
-    color: red;
+    font-size: 30px;
 }
