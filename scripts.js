@@ -19,7 +19,7 @@ let description = [
     {
          number: 0,
          title: "Pear",
-         text: "The pear (/ˈpɛər/) tree and shrub are a species of genus Pyrus /ˈpaɪrəs/, in the family Rosaceae, bearing the pomaceous fruit of the same name. Several species of pear are valued for their edible fruit and juices while others are cultivated as trees. The tree is medium-sized and native to coastal as well as mildly temperate regions of Europe, north Africa and Asia. Pear wood is one of the preferred materials in the manufacture of high-quality woodwind instruments and furniture. About 3000 known varieties of pears are grown worldwide. The fruit is consumed fresh, canned, as juice, and dried. In 2017, world production of pears was 24 million tonnes, with China as the main producer.",
+         text: "The pear (/ˈpɛər/) tree and shrub are a species of genus Pyrus /ˈpaɪrəs/, in the family Rosaceae, bearing the pomaceous fruit of the same name. Several species of pear are valued for their edible fruit and juices while others are cultivated as trees. The tree is medium-sized and native to coastal as well as mildly temperate regions of Europe, north Africa and Asia. Pear wood is one of the preferred materials in the manufacture of high-quality woodwind instruments and furniture. About 3000 known varieties of pears are grown worldwide. The fruit is consumed fresh, canned, as juice, and dried.",
          quote: "“A lorry load of pears has crashed on the motorway. It’s caused a huge jam.”"
     },
     {
@@ -37,7 +37,7 @@ let description = [
     {
         number: 3,
         title: "Pineapple",
-        text: "The pineapple (Ananas comosus) is a tropical plant with an edible fruit and the most economically significant plant in the family Bromeliaceae. The pineapple is indigenous to South America, where it has been cultivated for many centuries. The introduction of the pineapple to Europe in the 17th century made it a significant cultural icon of luxury. Since the 1820s, pineapple has been commercially grown in greenhouses and many tropical plantations. Further, it is the third most important tropical fruit in world production. In the 20th century, Hawaii was a dominant producer of pineapples, especially for the US; however, by 2016, Costa Rica, Brazil, and the Philippines accounted for nearly one-third of the world's production of pineapples.",
+        text: "The pineapple (Ananas comosus) is a tropical plant with an edible fruit and the most economically significant plant in the family Bromeliaceae. The pineapple is indigenous to South America, where it has been cultivated for many centuries. The introduction of the pineapple to Europe in the 17th century made it a significant cultural icon of luxury. Since the 1820s, pineapple has been commercially grown in greenhouses and many tropical plantations. Further, it is the third most important tropical fruit in world production.",
         quote: "“Girl, if you were a fruit, you'd be a fineapple!”"
     },
 ]
@@ -46,42 +46,55 @@ $('#pear')
     .mouseenter(function() {
         $(`#fruits`).append(`<h2>${description[0].title}</h2>`);
         $(`#fruits`).append(`<p>${description[0].text}</p>`);
-        $(`#fruits`).append(`<blockquote>${description[0].quote}</blockquote>`);
     })
     .mouseleave(function() {
         $(`#fruits`).empty()
-    });
+});
 
-
-    //if ($('#pear').data(this, 'hover', true)) {$('#fruits').append(`hey`)};
+    
+//if ($('#pear').data(this, 'hover', true)) {$('#fruits').append(`hey`)};
 
 $('#apple')
     .mouseenter(function() {
         $(`#fruits`).append(`<h2>${description[1].title}</h2>`);
         $(`#fruits`).append(`<p>${description[1].text}</p>`);
-        $(`#fruits`).append(`<blockquote>${description[1].quote}</blockquote>`);
     })
     .mouseleave(function() {
         $(`#fruits`).empty()
-    });
+});
 
 $('#grape')
     .mouseenter(function() {
         $(`#fruits`).append(`<h2>${description[2].title}</h2>`);
         $(`#fruits`).append(`<p>${description[2].text}</p>`);
-        $(`#fruits`).append(`<blockquote>${description[2].quote}</blockquote>`);
     })
     .mouseleave(function() {
         $(`#fruits`).empty()
-    });
+});
 
 
 $('#pineapple')
     .mouseenter(function() {
         $(`#fruits`).append(`<h2>${description[3].title}</h2>`);
         $(`#fruits`).append(`<p>${description[3].text}</p>`);
-        $(`#fruits`).append(`<blockquote>${description[3].quote}</blockquote>`);
     })
     .mouseleave(function() {
         $(`#fruits`).empty()
-    });
+});
+
+
+$('#pear').click(() => {
+        alert(description[0].quote)
+});
+
+$('#apple').click(() => {
+    alert(description[1].quote)
+});
+
+$('#grape').click(() => {
+    alert(description[2].quote)
+});
+
+$('#pineapple').click(() => {
+    alert(description[3].quote)
+});
