@@ -1,3 +1,7 @@
+body {
+    position: relative;
+}
+
 main {
     background-color: rgb(222, 250, 227);
     width: 70%;
@@ -27,7 +31,7 @@ h1 {
     justify-content: space-around;
     margin: auto;
     margin-top: 0px;
-    
+    display: block;
 }
 
 img {
@@ -59,19 +63,44 @@ img:hover {
     margin-bottom: 50px;
 }
 
-blockquote {
-    background: #b8d4bd;
+
+
+h2 {
+    font-size: 30px;
+}
+
+#window {
+    background: white;
+    opacity: 0.8;
     border-radius: 10px;
-    color: #70634a;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+}
+
+button {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    border: none;
+    background: none;
+    color: grey;
+    font-size: 20px;
+}
+
+#quote {
+    color: #b8d4bd;
     width: auto;
     margin-top: 10px;
     padding: 10px 15px;
     font-size: 20px;
     font-weight: bold;
-    position: absolute;
     bottom: 10px;
-}
-
-h2 {
-    font-size: 30px;
+    justify-content: center;
+    align-items: center;
 }
