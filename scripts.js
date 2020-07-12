@@ -98,3 +98,4 @@ $('#grape').click(() => {
 $('#pineapple').click(() => {
     alert(description[3].quote)
 });
+
