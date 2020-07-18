@@ -83,11 +83,16 @@ $('#pineapple')
 });
 
 
+
 $('#pear').click(() => {
-        alert(description[0].quote)
+    let window = '<section id=window></section>';
+    $('body').append(`${window}`);
+    $('#window').append(`<button>X</button>`);
+    $('#window').append(`<div id="quote">${description[0].quote}</div>`)
+
 });
 
-$('#apple').click(() => {
+/*$('#apple').click(() => {
     alert(description[1].quote)
 });
 
@@ -98,4 +103,9 @@ $('#grape').click(() => {
 $('#pineapple').click(() => {
     alert(description[3].quote)
 });
+*/
 
+
+$('button').click(function() {
+   $('#window').remove()
+});
