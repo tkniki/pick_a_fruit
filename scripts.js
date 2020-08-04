@@ -85,10 +85,9 @@ $('#pineapple')
 
 
 $('#pear').click(() => {
-    let window = '<section id=window></section>';
-    $('body').append(`${window}`);
-    $('#window').append(`<button>X</button>`);
-    $('#window').append(`<div id="quote">${description[0].quote}</div>`)
+    $('body').append(`<section id=window><button id="x">X</button><div id="quote">${description[0].quote}</div></section>`);
+    /*$('#window').append(``);
+    $('#window').append(``)*/
 
 });
 
@@ -106,6 +105,6 @@ $('#pineapple').click(() => {
 */
 
 
-$('button').click(function() {
-   $('#window').remove()
+$('#x').click(function() {
+   $('section.#window').remove()
 });
